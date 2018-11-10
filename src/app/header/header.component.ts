@@ -7,20 +7,12 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() featureSelected = new EventEmitter<string>();
-
-  activeLink = 'recipes';
+  // @Output() featureSelected = new EventEmitter<string>();
 
   constructor() {
   }
 
   ngOnInit() {
-  }
-
-  onSelect(feature: string) {
-    this.featureSelected.emit(feature);
-    this.activeLink = feature;
-    // Clear the active class and add it to the link you just clicked
   }
 
 }
